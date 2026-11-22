@@ -1,0 +1,215 @@
+# EXPOSICIÓN DEL PROYECTO: RESTAURANT MANAGER V2
+
+**Integrantes:** Persona 1, Persona 2, Persona 3 y Persona 4.
+
+**Duración estimada:** 10 a 12 minutos.
+
+---
+
+# PERSONA 1 — INTRODUCCIÓN, PROBLEMA Y OBJETIVOS
+
+**1. Presentación del proyecto**
+
+"Buenos días. Somos el equipo encargado del desarrollo del proyecto Restaurant Manager V2.
+
+Nuestro proyecto consiste en desarrollar una aplicación de escritorio para la gestión y administración de un restaurante. Su propósito es centralizar diferentes operaciones del establecimiento en un solo sistema, facilitando la organización de clientes, productos, pedidos, empleados, mesas e inventario.
+
+La aplicación está desarrollada utilizando Python como lenguaje de programación, CustomTkinter para la interfaz gráfica y SQLite para el almacenamiento de información."
+
+**2. Planteamiento del problema**
+
+"Los restaurantes necesitan coordinar diferentes procesos diariamente, como recibir pedidos, registrar clientes, controlar productos, organizar mesas, preparar alimentos y gestionar entregas a domicilio.
+
+Cuando estas actividades se realizan mediante procedimientos manuales o herramientas independientes, pueden presentarse problemas de organización, pérdida de información y dificultades para hacer seguimiento a los pedidos.
+
+Por esta razón, proponemos Restaurant Manager V2 como una herramienta que permita centralizar estas operaciones."
+
+**3. Justificación**
+
+"Consideramos importante desarrollar este sistema porque permite aplicar conocimientos de programación de software en una situación cercana al entorno empresarial.
+
+Además, buscamos facilitar la administración del restaurante, mejorar la organización de sus procesos y permitir que cada usuario tenga acceso a las herramientas correspondientes a sus responsabilidades."
+
+**4. Objetivo general**
+
+"Nuestro objetivo general es desarrollar una aplicación de escritorio que permita gestionar las operaciones principales de un restaurante mediante herramientas de registro, administración, seguimiento y almacenamiento de información."
+
+**5. Alcance**
+
+"El sistema contempla dos portales principales: uno para los clientes y otro para el equipo de trabajo.
+
+El portal de clientes permite registrarse, iniciar sesión, consultar productos, agregar artículos al carrito y realizar pedidos.
+
+El portal del equipo contempla los perfiles de administrador, personal de cocina y repartidor, cada uno con funciones y permisos específicos."
+
+**Transición:**
+
+"Ahora que conocemos el propósito del proyecto, nuestra siguiente persona explicará la metodología utilizada para desarrollarlo."
+
+---
+
+# PERSONA 2 — METODOLOGÍA Y MODELO DE PROCESO
+
+**1. Metodología tradicional**
+
+"Para el desarrollo de Restaurant Manager utilizamos una metodología tradicional organizada por fases.
+
+Esto significa que el proyecto se estructura mediante etapas definidas que permiten planificar, analizar, diseñar, implementar y comprobar el sistema.
+
+Las fases que establecimos fueron:
+
+1. Planificación.
+2. Análisis de requisitos.
+3. Diseño del sistema.
+4. Implementación.
+5. Pruebas.
+6. Entrega y mantenimiento.
+
+Cada fase tiene un propósito dentro del desarrollo y permite mantener una organización clara del trabajo."
+
+**2. Modelo de proceso incremental**
+
+"Adicionalmente, utilizamos el modelo de proceso incremental.
+
+Este modelo consiste en construir el software por entregas funcionales. En lugar de desarrollar toda la aplicación de una sola vez, incorporamos funcionalidades progresivamente, verificando cada incremento antes de continuar."
+
+**3. Explicación de los ocho incrementos**
+
+"Nuestro proyecto se dividió en ocho incrementos:
+
+- Incremento 1: estructura inicial y conexión con la base de datos.
+- Incremento 2: registro, autenticación y perfil de clientes.
+- Incremento 3: catálogo de productos y categorías.
+- Incremento 4: carrito de compras.
+- Incremento 5: creación y consulta de pedidos.
+- Incremento 6: operaciones del restaurante, mesas, cocina y repartidores.
+- Incremento 7: administración ampliada, inventario, pagos, turnos y reportes.
+- Incremento 8: integración y pruebas finales.
+
+De esta manera, cada nueva entrega se construyó sobre las funcionalidades anteriores."
+
+**4. Herramientas utilizadas**
+
+"Para desarrollar la aplicación seleccionamos las siguientes herramientas:
+
+- Python: lenguaje utilizado para la programación.
+- CustomTkinter: biblioteca utilizada para construir la interfaz gráfica.
+- SQLite: sistema de almacenamiento de información.
+- Visual Studio Code: entorno utilizado para escribir y ejecutar el código.
+
+Estas herramientas nos permitieron desarrollar una aplicación de escritorio sin necesidad de utilizar un servidor externo para nuestra versión inicial."
+
+**Transición:**
+
+"Después de conocer cómo organizamos el desarrollo, nuestra siguiente persona explicará las principales funcionalidades de la aplicación."
+
+---
+
+# PERSONA 3 — FUNCIONAMIENTO Y FUNCIONALIDADES
+
+**1. Portal de clientes**
+
+"Restaurant Manager comienza con una pantalla de bienvenida que presenta dos opciones principales: clientes y equipo.
+
+Al ingresar por el portal de clientes, el usuario puede crear una cuenta o iniciar sesión.
+
+Una vez autenticado, accede a su panel personal, desde donde puede consultar el catálogo de productos y seleccionar los artículos que desea comprar."
+
+**2. Catálogo y carrito**
+
+"El catálogo presenta los productos organizados por categorías, mostrando sus nombres, descripciones y precios.
+
+El cliente puede agregar productos al carrito, aumentar o disminuir las cantidades, eliminar artículos y consultar el total de su compra.
+
+El sistema calcula automáticamente los subtotales y el valor total."
+
+**3. Creación de pedidos**
+
+"Una vez que el cliente termina de seleccionar sus productos, puede continuar con la creación del pedido.
+
+El sistema contempla dos modalidades:
+
+- Domicilio.
+- Consumo en restaurante.
+
+Para los domicilios se solicita una dirección de entrega. Para el consumo en restaurante, la mesa es asignada posteriormente por un empleado autorizado.
+
+Los pedidos se almacenan en la base de datos y pueden consultarse mediante el historial del cliente."
+
+**4. Portal del equipo**
+
+"El segundo portal está destinado al personal del restaurante y cuenta con diferentes perfiles:
+
+El administrador tiene permisos generales para gestionar empleados, productos, pedidos, mesas, inventario, pagos y reportes.
+
+El personal de cocina puede consultar pedidos aceptados y actualizar su estado durante la preparación.
+
+El repartidor puede consultar las entregas que tiene asignadas y actualizar su estado hasta confirmar la entrega."
+
+**5. Administración e inventario**
+
+"También implementamos funcionalidades administrativas para controlar las existencias de productos.
+
+Cuando el administrador acepta un pedido, el sistema descuenta automáticamente las cantidades correspondientes del inventario.
+
+Además, registra los movimientos y contempla la restitución de existencias cuando se cancela un pedido bajo las condiciones establecidas.
+
+El método de pago definido para nuestro proyecto es efectivo."
+
+**Transición:**
+
+"Finalmente, nuestra última persona explicará las pruebas realizadas, el diagrama de clases y las conclusiones del proyecto."
+
+---
+
+# PERSONA 4 — PRUEBAS, DIAGRAMA DE CLASES Y CONCLUSIONES
+
+**1. Pruebas del sistema**
+
+"Una parte fundamental del desarrollo fue comprobar que las funcionalidades trabajaran correctamente.
+
+Para ello realizamos pruebas automatizadas utilizando las herramientas de pruebas de Python.
+
+En nuestra última ejecución obtuvimos los siguientes resultados:
+
+- 54 pruebas ejecutadas.
+- 54 pruebas aprobadas.
+- 0 pruebas fallidas.
+
+También se realizaron pruebas de integración que recorren dos procesos completos: un pedido a domicilio y un pedido para consumir en el restaurante.
+
+Estas pruebas permiten verificar que diferentes partes del sistema puedan trabajar conjuntamente."
+
+**2. Diagrama de clases**
+
+"Como parte de la documentación final elaboramos el diagrama de clases de Restaurant Manager V2.
+
+Este diagrama representa las clases que realmente están implementadas en Python, sus responsabilidades y sus relaciones.
+
+Entre las clases principales encontramos:
+
+- RestaurantApp: coordina la interfaz y la navegación.
+- ShoppingCart: administra el carrito y sus cálculos.
+- OrderService: gestiona la lógica de creación y consulta de pedidos.
+
+También presentamos un modelo complementario de las entidades almacenadas en SQLite, donde se representan los datos de clientes, empleados, productos, pedidos, pagos, inventario y mesas.
+
+Es importante diferenciar las clases implementadas en Python de las tablas utilizadas para almacenar información en la base de datos."
+
+**3. Conclusiones**
+
+"Con el desarrollo de Restaurant Manager V2 logramos construir una aplicación que centraliza diferentes operaciones de un restaurante.
+
+Durante el proyecto aplicamos conocimientos de programación en Python, interfaces gráficas, bases de datos, organización modular, seguridad de contraseñas y pruebas de software.
+
+También aplicamos el modelo incremental para construir progresivamente las funcionalidades y utilizamos una organización tradicional por fases para estructurar el desarrollo.
+
+Finalmente, el proyecto nos permitió comprender la importancia de planificar, diseñar, implementar y probar un sistema antes de considerarlo terminado."
+
+**4. Cierre**
+
+"Muchas gracias por su atención. Con esto damos por finalizada nuestra presentación del proyecto Restaurant Manager V2."
+
+---
+
+# FIN DE LA EXPOSICIÓN
